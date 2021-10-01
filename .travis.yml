@@ -1,4 +1,3 @@
-
 language: ruby
 
 rvm:
@@ -12,4 +11,4 @@ script:
 
 branches:
   only:
-  - main
+  - master
