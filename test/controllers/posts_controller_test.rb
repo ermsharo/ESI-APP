@@ -1,4 +1,4 @@
-require 'test_helper'
+=begin require 'test_helper'
 
 class PostsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -46,3 +46,4 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
     assert_redirected_to posts_url
   end
 end
+ =end
