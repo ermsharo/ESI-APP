@@ -1,51 +1,14 @@
-# Trabalho-ESI
-
-# Trabalho para a disciplina de Engenharia de Sistemas de Informação I 
-
-O trabalho pretende criar um aplicativo de receitas invertido, onde se coloca os ingredientes e descobre as receitas equivalentes 
+# Repositório de Exemplo
+## Rails 6 com BDD e TDD
 
 
-# Sobre o trabalho 
-O trabalho tera como função implementar uma interface de entrada para ingredientes, e procurar por meio de uma busca de multiplos parametros as receitas que podem ser feitas com os ingredientes e quantidade dos mesmos. 
+Travis: [![Build Status](https://travis-ci.com/vascmig/aula_rails.svg?branch=master)](https://travis-ci.com/vascmig/aula_rails)
 
-# Produzido por
-* André da Silva Gonçalves - 10687562
-* Emilio Rodrigues Magalhães Sanches Haro - 10816867
-* Guilherme Kaissar Ferreira Khoury - 10723707
-* Lucca Eppinger - 11381406
+Codeclimate: [![Maintainability](https://api.codeclimate.com/v1/badges/3e817f68d1e7aaebde5f/maintainability)](https://codeclimate.com/github/vascmig/aula_rails/maintainability)
+
+Coveralls: [![Coverage Status](https://coveralls.io/repos/github/vascmig/aula_rails/badge.svg?branch=master)](https://coveralls.io/github/vascmig/aula_rails?branch=master)
 
 
-# Links
- * <a href = "https://codeclimate.com/github/ermsharo/ESI-APP">Code Climate</a>
- 
- 
-*  <a href = "https://app.travis-ci.com/github/ermsharo/recipeApp"> Travis CI</a>
- 
+[Aplicação hospedada no Heroku ](https://aula-rails.herokuapp.com/)
 
-* <a href = "https://dashboard.heroku.com/apps/recipe-app-esi/"> Heroku </a>
-
-
-# Infos do ruby
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[Anotações da aula ](https://gist.github.com/vascmig/1bda07c3cc2f5d61b4f0698ad6cbee4e)
