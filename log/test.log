@@ -1,0 +1,101 @@
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE IF EXISTS "alunos"[0m
+  [1m[35m (9.9ms)[0m  [1m[35mCREATE TABLE "alunos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "nome" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (9.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (13.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20200831141342)[0m
+  [1m[35m (10.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2021-10-14 17:31:43.005181"], ["updated_at", "2021-10-14 17:31:43.005181"]]
+  [1m[35m (13.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "schema_sha1"], ["value", "c2d26b34e2982a3aeeb9527f6315571a5713cf85"], ["created_at", "2021-10-14 17:31:43.023040"], ["updated_at", "2021-10-14 17:31:43.023040"]]
+  [1m[35m (13.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/alunos/new" for 127.0.0.1 at 2021-10-14 14:31:43 -0300
+Processing by AlunosController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 2.4ms | Allocations: 2473)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/emilio/Projetos/ESI-APP/public/packs-test
+[Webpacker] Hash: 4a2730d466b52d3d00e7
+Version: webpack 4.46.0
+Time: 545ms
+Built at: 10/14/2021 2:31:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-c28cbe491b13cb99de76.js    124 KiB  application  [emitted] [immutable]  application
+js/application-c28cbe491b13cb99de76.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  384 bytes               [emitted]              
+Entrypoint application = js/application-c28cbe491b13cb99de76.js js/application-c28cbe491b13cb99de76.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 1427ms (Views: 1417.8ms | ActiveRecord: 0.5ms | Allocations: 17903)
+Started POST "/alunos" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#create as HTML
+  Parameters: {"aluno"=>{"nome"=>"Miguel Vasconcelos", "email"=>"miguel.vasconcelos@usp.br"}, "commit"=>"Salvar novo aluno"}
+  [1m[35m (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mAluno Create (0.3ms)[0m  [1m[32mINSERT INTO "alunos" ("nome", "email", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["nome", "Miguel Vasconcelos"], ["email", "miguel.vasconcelos@usp.br"], ["created_at", "2021-10-14 17:31:44.610218"], ["updated_at", "2021-10-14 17:31:44.610218"]]
+  [1m[35m (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/alunos/1
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 977)
+Started GET "/alunos/1" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mAluno Load (0.1ms)[0m  [1m[34mSELECT "alunos".* FROM "alunos" WHERE "alunos"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering alunos/show.html.erb within layouts/application
+  Rendered alunos/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 124)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.1ms | Allocations: 2863)
+  [1m[36mAluno Load (0.1ms)[0m  [1m[34mSELECT "alunos".* FROM "alunos" ORDER BY id DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Started GET "/alunos/new" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#new as HTML
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 0.6ms | Allocations: 493)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2593)
+Started POST "/alunos" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#create as HTML
+  Parameters: {"aluno"=>{"nome"=>"", "email"=>"miguel.vasconcelos@usp.br"}, "commit"=>"Salvar novo aluno"}
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 651)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3248)
+Started GET "/alunos/new" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#new as HTML
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 488)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms | Allocations: 2587)
+Started POST "/alunos" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#create as HTML
+  Parameters: {"aluno"=>{"nome"=>"Miguel Vasconcelos", "email"=>""}, "commit"=>"Salvar novo aluno"}
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 764)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3548)
+Started GET "/alunos/new" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#new as HTML
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 0.9ms | Allocations: 488)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 2587)
+Started POST "/alunos" for 127.0.0.1 at 2021-10-14 14:31:44 -0300
+Processing by AlunosController#create as HTML
+  Parameters: {"aluno"=>{"nome"=>"Miguel Vasconcelos", "email"=>"a!1ç....,,,´/ ? @a"}, "commit"=>"Salvar novo aluno"}
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 0.8ms | Allocations: 643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 3203)
