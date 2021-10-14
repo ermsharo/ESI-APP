@@ -275,3 +275,12 @@ Processing by AlunosController#new as HTML
 Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 3833)
 
 
+Started GET "/" for ::1 at 2021-10-14 15:29:07 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AlunosController#new as HTML
+  Rendering alunos/new.html.erb within layouts/application
+  Rendered alunos/new.html.erb within layouts/application (Duration: 2.8ms | Allocations: 2596)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 8.7ms | ActiveRecord: 2.5ms | Allocations: 12778)
+
+
