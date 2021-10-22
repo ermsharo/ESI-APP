@@ -1,0 +1,2 @@
+module NewrecipeHelper
+end
