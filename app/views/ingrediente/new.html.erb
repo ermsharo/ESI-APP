@@ -1,0 +1,30 @@
+<h1>Novo ingrediente</h1>
+
+<% if @ingrediente.errors.any? %>
+<div id="error_explanation">
+    <h2>
+    <%= @ingrediente.errors.count %> erro(s) impedem que o aluno seja salvo:
+    </h2>
+    <ul>
+    <% @ingrediente.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    <% end %>
+    </ul>
+</div>
+<% end %>
+
+<%= form_with scope: :ingrediente,  local: true do |form| %>
+  <p>
+    <%= form.label :nome %><br>
+    <%= form.text_field :nome %>
+  </p>
+ 
+  <p>
+    <%= form.label :relevancia %><br>
+    <%= form.text_field :relevancia %>
+  </p>
+
+  <p>
+    <%= form.submit 'Salvar ingrediente' %>
+  </p>
+<% end %>
