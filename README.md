@@ -9,9 +9,13 @@ Nosso projeto a principio tem como principal objetivo criar uma aplicação onde
 
 
 Produzido por:
+
 André Gonçalves - 10687562
+
 Emilio Haro - 10816857
+
 Lucca Eppinger - 11381406
+
 Guilherme Khoury - 10723707
 
 
