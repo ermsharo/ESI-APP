@@ -5034,3 +5034,171 @@ Processing by IngredienteController#index as HTML
 Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 1.0ms | Allocations: 5391)
 
 
+Started GET "/" for ::1 at 2021-10-28 09:23:16 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 6208)
+Completed 200 OK in 30ms (Views: 21.4ms | ActiveRecord: 0.0ms | Allocations: 8819)
+
+
+Started GET "/ingrediente" for ::1 at 2021-10-28 09:23:31 -0300
+Processing by IngredienteController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.2ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingrediente/index.html.erb:3
+  Rendered ingrediente/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 8746)
+Completed 200 OK in 18ms (Views: 11.5ms | ActiveRecord: 4.9ms | Allocations: 9894)
+
+
+Started GET "/ingrediente/new" for ::1 at 2021-10-28 09:23:34 -0300
+Processing by IngredienteController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/new.html.erb within layouts/application
+  Rendered ingrediente/new.html.erb within layouts/application (Duration: 9.1ms | Allocations: 2904)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 6549)
+Completed 200 OK in 26ms (Views: 24.1ms | ActiveRecord: 0.0ms | Allocations: 7076)
+
+
+Started POST "/ingrediente/new" for ::1 at 2021-10-28 09:23:39 -0300
+Processing by IngredienteController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "ingrediente"=>{"nome"=>"dsfdsf", "relevancia"=>"sdfsdf"}, "commit"=>"Salvar ingrediente"}
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/new.html.erb within layouts/application
+  Rendered ingrediente/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 574)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 3638)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.0ms | Allocations: 4098)
+
+
+Started GET "/ingrediente" for ::1 at 2021-10-28 09:23:44 -0300
+Processing by IngredienteController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.3ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingrediente/index.html.erb:3
+  Rendered ingrediente/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1955)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 5007)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.3ms | Allocations: 5405)
+
+
+Started GET "/ingrediente" for ::1 at 2021-10-28 09:23:44 -0300
+Processing by IngredienteController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (3.2ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingrediente/index.html.erb:3
+  Rendered ingrediente/index.html.erb within layouts/application (Duration: 17.4ms | Allocations: 1951)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 35.2ms | Allocations: 5003)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 3.2ms | Allocations: 5401)
+
+
+Started GET "/ingrediente/6" for ::1 at 2021-10-28 09:23:50 -0300
+Processing by IngredienteController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mIngrediente Load (1.1ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/ingrediente_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/show.html.erb within layouts/application
+  Rendered ingrediente/show.html.erb within layouts/application (Duration: 0.8ms | Allocations: 267)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 3259)
+Completed 200 OK in 23ms (Views: 6.9ms | ActiveRecord: 2.0ms | Allocations: 7709)
+
+
+Started GET "/ingrediente/9" for ::1 at 2021-10-28 09:24:16 -0300
+Processing by IngredienteController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mIngrediente Load (0.8ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/ingrediente_controller.rb:9:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/show.html.erb within layouts/application
+  Rendered ingrediente/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 134)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.0ms | Allocations: 3189)
+Completed 200 OK in 9ms (Views: 5.6ms | ActiveRecord: 0.8ms | Allocations: 4249)
+
+
+Started DELETE "/ingrediente/9" for ::1 at 2021-10-28 09:24:19 -0300
+Processing by IngredienteController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"9"}
+  [1m[36mIngrediente Load (1.6ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/ingrediente_controller.rb:40:in `destroy'
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/ingrediente_controller.rb:41:in `destroy'
+  [1m[36mIngrediente Destroy (1.7ms)[0m  [1m[31mDELETE FROM "ingredientes" WHERE "ingredientes"."id" = $1[0m  [["id", 9]]
+  ↳ app/controllers/ingrediente_controller.rb:41:in `destroy'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/ingrediente_controller.rb:41:in `destroy'
+Redirected to http://localhost:3000/ingrediente/9
+Completed 302 Found in 30ms (ActiveRecord: 12.5ms | Allocations: 2781)
+
+
+Started GET "/ingrediente/9" for ::1 at 2021-10-28 09:24:19 -0300
+Processing by IngredienteController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mIngrediente Load (1.6ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 9], ["LIMIT", 1]]
+  ↳ app/controllers/ingrediente_controller.rb:9:in `show'
+Completed 404 Not Found in 7ms (ActiveRecord: 1.6ms | Allocations: 1221)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Ingrediente with 'id'=9):
+  
+app/controllers/ingrediente_controller.rb:9:in `show'
+Started GET "/ingrediente/" for ::1 at 2021-10-28 09:24:22 -0300
+Processing by IngredienteController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.3ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingrediente/index.html.erb:3
+  Rendered ingrediente/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1876)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 5059)
+Completed 200 OK in 11ms (Views: 9.1ms | ActiveRecord: 1.3ms | Allocations: 5550)
+
+
+Started GET "/ingrediente/" for ::1 at 2021-10-28 09:26:44 -0300
+Processing by IngredienteController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.1ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingrediente/index.html.erb:3
+  Rendered ingrediente/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1763)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4813)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.1ms | Allocations: 5200)
+
+
+Started GET "/" for ::1 at 2021-10-28 09:35:42 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 431)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 6208)
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 8819)
+
+
+Started GET "/ingrediente" for ::1 at 2021-10-28 09:35:48 -0300
+Processing by IngredienteController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingrediente/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.2ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingrediente/index.html.erb:3
+  Rendered ingrediente/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 5510)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 8568)
+Completed 200 OK in 19ms (Views: 11.6ms | ActiveRecord: 5.8ms | Allocations: 9716)
+
+
