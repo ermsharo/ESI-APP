@@ -1,13 +1,13 @@
 Dado('que estou na página de cadastro de ingrediente') do
-    visit 'ingrediente/new'
+    visit 'ingredientes/new'
   end
   
   Quando('preencho o campo {string} com {string}') do |string, string2|
     fill_in string, :with => string2  
   end
-  
+  c
   Quando('clico em salvar') do
-    click_on 'Salvar ingrediente'
+    click_on 'registrar'
   end
   
   Então('ele deve ter sido salvo no banco de dados') do

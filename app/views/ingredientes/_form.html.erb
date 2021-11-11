@@ -1,7 +1,7 @@
 <%= form_with(model: ingrediente) do |form| %>
   <% if ingrediente.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(ingrediente.errors.count, "error") %> prohibited this ingrediente from being saved:</h2>
+      <h2><%= pluralize(ingrediente.errors.count, "error") %> erro ao salvar registros:</h2>
 
       <ul>
         <% ingrediente.errors.each do |error| %>
@@ -31,6 +31,6 @@
 =end%>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit  'registrar' %>
   </div>
 <% end %>
