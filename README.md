@@ -19,9 +19,6 @@ Lucca Eppinger - 11381406
 Guilherme Khoury - 10723707
 
 
-
-Travis: [![Build Status](https://app.travis-ci.com/ermsharo/ESI-APP.svg?branch=main)](https://app.travis-ci.com/ermsharo/ESI-APP)
-
 Codeclimate: [![Maintainability](https://api.codeclimate.com/v1/badges/e5ee8d0cf2903b6b654d/maintainability)](https://codeclimate.com/github/ermsharo/ESI-APP/maintainability)
 
  

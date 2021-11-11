@@ -6827,3 +6827,16 @@ Processing by IngredientesController#new as HTML
 Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms | Allocations: 9687)
 
 
+Started GET "/ingredientes" for ::1 at 2021-11-11 07:13:16 -0300
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (0.7ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 18.7ms | Allocations: 5456)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 38.1ms | Allocations: 11578)
+Completed 200 OK in 49ms (Views: 35.3ms | ActiveRecord: 5.7ms | Allocations: 14488)
+
+
