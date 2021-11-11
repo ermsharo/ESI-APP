@@ -24,12 +24,9 @@ Travis: [![Build Status](https://app.travis-ci.com/ermsharo/ESI-APP.svg?branch=m
 
 Codeclimate: [![Maintainability](https://api.codeclimate.com/v1/badges/e5ee8d0cf2903b6b654d/maintainability)](https://codeclimate.com/github/ermsharo/ESI-APP/maintainability)
 
-<!-- Coveralls: [![Coverage Status](https://coveralls.io/repos/github/vascmig/aula_rails/badge.svg?branch=master)](https://coveralls.io/github/vascmig/aula_rails?branch=master)
- -->
- 
  
  [![Coverage Status](https://coveralls.io/repos/github/ermsharo/ESI-APP/badge.svg?branch=main)](https://coveralls.io/github/ermsharo/ESI-APP?branch=main)
 
-[Aplicação hospedada no Heroku ](https://recipe-app-esi.herokuapp.com/)
+
 
 

@@ -1,6 +1,6 @@
 #language: pt
 
-Funcionalidade: Cadastrar alunos
+Funcionalidade: Cadastrar ingredientes
 Como administrador
 Para que eu possa pesquisar uma receita usando os seus ingredientes
 Eu quero cadastrar um novo ingrediente no banco de dados

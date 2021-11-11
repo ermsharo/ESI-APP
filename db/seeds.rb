@@ -7,8 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Ingrediente.create(nome: 'Frango', relevancia: 1)
+ Ingrediente.create(nome: 'Frango', relevancia: 1)
 Ingrediente.create(nome: 'Frango', relevancia: 2)
 Ingrediente.create(nome: 'Frango', relevancia: 3)
 Ingrediente.create(nome: 'Frango', relevancia: 4)
 Ingrediente.create(nome: 'Frango', relevancia: 5)
+ 
