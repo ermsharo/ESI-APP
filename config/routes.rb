@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :receita
   resources :ingredientes
   get 'ingrediente/index'
   get 'ingrediente/show'
