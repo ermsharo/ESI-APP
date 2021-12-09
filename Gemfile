@@ -6,7 +6,6 @@ ruby '2.6.6'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
 # Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
@@ -36,12 +35,8 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0.1'
   gem 'jasmine'
   gem 'coveralls', require: false  
-  gem 'sqlite3'
 end
 
-group :production do
- gem 'pg', '~> 0.18'
-end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -52,8 +47,15 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  
+	gem 'pg', '~> 1.2', '>= 1.2.3'
 end
+
+group :production do
+	gem 'pg', '~> 1.2', '>= 1.2.3'
+	#gem 'rails_12factor', '0.0.2'
+end
+
+
 
 group :test do
   # Adds support for Capybara system testing and selenium driver
