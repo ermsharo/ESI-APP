@@ -13836,3 +13836,251 @@ Processing by ResultadosController#create as HTML
 Completed 422 Unprocessable Entity in 14ms (Views: 11.4ms | ActiveRecord: 0.0ms | Allocations: 8174)
 
 
+Started GET "/" for 127.0.0.1 at 2021-12-09 06:51:35 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 446)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 7567)
+Completed 200 OK in 31ms (Views: 19.1ms | ActiveRecord: 0.0ms | Allocations: 10393)
+
+
+Started GET "/resultados" for ::1 at 2021-12-09 06:51:41 -0300
+Processing by ResultadosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/index.html.erb within layouts/application
+  [1m[36mResultado Load (2.0ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados"[0m
+  ↳ app/views/resultados/index.html.erb:20
+  Rendered resultados/index.html.erb within layouts/application (Duration: 20.6ms | Allocations: 8152)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 11463)
+Completed 200 OK in 31ms (Views: 21.5ms | ActiveRecord: 5.9ms | Allocations: 12973)
+
+
+Started GET "/resultados" for ::1 at 2021-12-09 06:52:57 -0300
+Processing by ResultadosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/index.html.erb within layouts/application
+  [1m[36mResultado Load (1.0ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados"[0m
+  ↳ app/views/resultados/index.html.erb:20
+  Rendered resultados/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1365)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.0ms | Allocations: 4935)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 1.0ms | Allocations: 6115)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:52:59 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 2.5ms | Allocations: 2718)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3082)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 6352)
+Completed 200 OK in 15ms (Views: 6.5ms | ActiveRecord: 2.8ms | Allocations: 10657)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:00 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.1ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1542)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.6ms | Allocations: 4853)
+Completed 200 OK in 11ms (Views: 8.3ms | ActiveRecord: 1.1ms | Allocations: 5922)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:01 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.8ms | Allocations: 573)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 2.2ms | Allocations: 688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 3995)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4428)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:02 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.6ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5021)
+Completed 200 OK in 12ms (Views: 9.7ms | ActiveRecord: 1.6ms | Allocations: 5449)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:02 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.4ms | Allocations: 570)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 4589)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms | Allocations: 5021)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:26 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 2.7ms | Allocations: 934)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1290)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.9ms | Allocations: 4884)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 6049)
+
+
+Started GET "/" for ::1 at 2021-12-09 06:53:27 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 321)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4242)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 5183)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:28 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.3ms | Allocations: 578)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 694)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4011)
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 4444)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:29 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (0.8ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4861)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.8ms | Allocations: 5875)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:29 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.8ms | Allocations: 573)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 2.3ms | Allocations: 688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 4004)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 4437)
+
+
+Started GET "/" for ::1 at 2021-12-09 06:53:30 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 3358)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 3772)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:31 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.5ms | Allocations: 570)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 4605)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.0ms | Allocations: 5038)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:31 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.9ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 4433)
+Completed 200 OK in 15ms (Views: 12.1ms | ActiveRecord: 1.9ms | Allocations: 4861)
+
+
+Started GET "/" for ::1 at 2021-12-09 06:53:32 -0300
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 3354)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 3767)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:36 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.5ms | Allocations: 570)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 4001)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 4433)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:36 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.3ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 5022)
+Completed 200 OK in 10ms (Views: 8.7ms | ActiveRecord: 1.3ms | Allocations: 5450)
+
+
+Started GET "/ingredientes/new" for ::1 at 2021-12-09 06:53:37 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.4ms | Allocations: 570)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 685)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 4001)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 4433)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:37 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (3.2ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 15.9ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 33.1ms | Allocations: 4432)
+Completed 200 OK in 38ms (Views: 32.3ms | ActiveRecord: 3.2ms | Allocations: 4860)
+
+
+Started GET "/ingredientes" for ::1 at 2021-12-09 06:53:38 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.6ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1115)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 4432)
+Completed 200 OK in 12ms (Views: 9.3ms | ActiveRecord: 1.6ms | Allocations: 4860)
+
+

@@ -1,7 +1,7 @@
 <%= form_with(model: resultado) do |form| %>
   <% if resultado.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(resultado.errors.count, "error") %> prohibited this resultado from being saved:</h2>
+      <h2><%= pluralize(resultado.errors.count, "error") %> Erro ao salvar esta receita:</h2>
 
       <ul>
         <% resultado.errors.each do |error| %>
