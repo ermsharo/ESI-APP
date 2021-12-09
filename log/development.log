@@ -7425,3 +7425,248 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 43ms (Views: 22.4ms | ActiveRecord: 0.0ms | Allocations: 9783)
 
 
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateResultados (20211209055949)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (14.2ms)[0m  [1m[35mCREATE TABLE "resultados" ("id" bigserial primary key, "nome" character varying, "ingredientes" character varying, "ingredientes_tag" character varying, "como_fazer" character varying, "imagem" character varying, "origem" character varying, "relevancia" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211209055949"]]
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2021-12-09 03:00:22 -0300
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 446)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 50.9ms | Allocations: 26668)
+Completed 200 OK in 67ms (Views: 53.2ms | ActiveRecord: 0.0ms | Allocations: 29493)
+
+
+Started GET "/resultado" for 127.0.0.1 at 2021-12-09 03:00:30 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/resultado"):
+  
+Started GET "/resultado" for 127.0.0.1 at 2021-12-09 03:03:09 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/resultado"):
+  
+Started GET "/resultados" for 127.0.0.1 at 2021-12-09 03:03:20 -0300
+Processing by ResultadosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/index.html.erb within layouts/application
+  [1m[36mResultado Load (0.8ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados"[0m
+  ↳ app/views/resultados/index.html.erb:20
+  Rendered resultados/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1390)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 4826)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.8ms | Allocations: 6265)
+
+
+Started GET "/resultados/new" for 127.0.0.1 at 2021-12-09 03:03:23 -0300
+Processing by ResultadosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/new.html.erb within layouts/application
+  Rendered resultados/_form.html.erb (Duration: 4.5ms | Allocations: 4159)
+  Rendered resultados/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4525)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 7834)
+Completed 200 OK in 32ms (Views: 8.3ms | ActiveRecord: 11.1ms | Allocations: 15818)
+
+
+Started GET "/resultados" for 127.0.0.1 at 2021-12-09 03:05:09 -0300
+Processing by ResultadosController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/index.html.erb within layouts/application
+  [1m[36mResultado Load (0.9ms)[0m  [1m[34mSELECT "resultados".* FROM "resultados"[0m
+  ↳ app/views/resultados/index.html.erb:20
+  Rendered resultados/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1027)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 4324)
+Completed 200 OK in 10ms (Views: 6.9ms | ActiveRecord: 0.9ms | Allocations: 5314)
+
+
+Started GET "/resultados/new" for 127.0.0.1 at 2021-12-09 03:05:42 -0300
+Processing by ResultadosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/new.html.erb within layouts/application
+  Rendered resultados/_form.html.erb (Duration: 5.4ms | Allocations: 2167)
+  Rendered resultados/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6085)
+Completed 200 OK in 28ms (Views: 13.7ms | ActiveRecord: 5.0ms | Allocations: 12946)
+
+
+Started GET "/resultados/new" for 127.0.0.1 at 2021-12-09 03:05:49 -0300
+Processing by ResultadosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/new.html.erb within layouts/application
+  Rendered resultados/_form.html.erb (Duration: 3.2ms | Allocations: 1627)
+  Rendered resultados/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1743)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 5050)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms | Allocations: 5482)
+
+
+Started GET "/resultados/new" for 127.0.0.1 at 2021-12-09 03:06:11 -0300
+Processing by ResultadosController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering resultados/new.html.erb within layouts/application
+  Rendered resultados/_form.html.erb (Duration: 3.0ms | Allocations: 2101)
+  Rendered resultados/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2457)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 6018)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 7188)
+
+
+Started GET "/ingredientes" for 127.0.0.1 at 2021-12-09 03:09:21 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (3.5ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 4854)
+Completed 200 OK in 15ms (Views: 9.0ms | ActiveRecord: 3.5ms | Allocations: 6915)
+
+
+Started GET "/ingredientes/new" for 127.0.0.1 at 2021-12-09 03:09:23 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.4ms | Allocations: 1042)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1402)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 6.1ms | Allocations: 4708)
+Completed 200 OK in 17ms (Views: 6.5ms | ActiveRecord: 4.8ms | Allocations: 8797)
+
+
+Started POST "/ingredientes" for 127.0.0.1 at 2021-12-09 03:09:30 -0300
+Processing by IngredientesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "ingrediente"=>{"nome"=>"MIlho ", "relevancia"=>"0"}, "commit"=>"registrar"}
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/ingredientes_controller.rb:27:in `block in create'
+  [1m[36mIngrediente Create (2.3ms)[0m  [1m[32mINSERT INTO "ingredientes" ("nome", "relevancia", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "MIlho "], ["relevancia", "0"], ["created_at", "2021-12-09 06:09:30.763172"], ["updated_at", "2021-12-09 06:09:30.763172"]]
+  ↳ app/controllers/ingredientes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/ingredientes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/ingredientes/23
+Completed 302 Found in 10ms (ActiveRecord: 5.9ms | Allocations: 3026)
+
+
+Started GET "/ingredientes/23" for 127.0.0.1 at 2021-12-09 03:09:30 -0300
+Processing by IngredientesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mIngrediente Load (0.4ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/ingredientes_controller.rb:62:in `set_ingrediente'
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/show.html.erb within layouts/application
+  Rendered ingredientes/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 282)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3592)
+Completed 200 OK in 7ms (Views: 3.2ms | ActiveRecord: 0.9ms | Allocations: 5453)
+
+
+Started GET "/ingredientes" for 127.0.0.1 at 2021-12-09 03:09:34 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.3ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1162)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 4492)
+Completed 200 OK in 10ms (Views: 8.3ms | ActiveRecord: 1.3ms | Allocations: 5371)
+
+
+Started GET "/ingredientes/23" for 127.0.0.1 at 2021-12-09 03:09:39 -0300
+Processing by IngredientesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mIngrediente Load (1.0ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/ingredientes_controller.rb:62:in `set_ingrediente'
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/show.html.erb within layouts/application
+  Rendered ingredientes/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 4016)
+Completed 200 OK in 10ms (Views: 6.5ms | ActiveRecord: 1.0ms | Allocations: 5153)
+
+
+Started GET "/ingredientes" for 127.0.0.1 at 2021-12-09 03:09:42 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (0.9ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 4320)
+Completed 200 OK in 9ms (Views: 7.5ms | ActiveRecord: 0.9ms | Allocations: 4748)
+
+
+Started GET "/ingredientes/23" for 127.0.0.1 at 2021-12-09 03:10:10 -0300
+Processing by IngredientesController#show as HTML
+  Parameters: {"id"=>"23"}
+  [1m[36mIngrediente Load (0.8ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/ingredientes_controller.rb:62:in `set_ingrediente'
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/show.html.erb within layouts/application
+  Rendered ingredientes/show.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3409)
+Completed 200 OK in 9ms (Views: 6.0ms | ActiveRecord: 0.8ms | Allocations: 4547)
+
+
+Started GET "/ingredientes/new" for 127.0.0.1 at 2021-12-09 03:10:17 -0300
+Processing by IngredientesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/new.html.erb within layouts/application
+  Rendered ingredientes/_form.html.erb (Duration: 1.6ms | Allocations: 572)
+  Rendered ingredientes/new.html.erb within layouts/application (Duration: 2.1ms | Allocations: 688)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 7.2ms | Allocations: 4139)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 4591)
+
+
+Started POST "/ingredientes" for 127.0.0.1 at 2021-12-09 03:10:26 -0300
+Processing by IngredientesController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "ingrediente"=>{"nome"=>"molho de tomate ", "relevancia"=>"2"}, "commit"=>"registrar"}
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/ingredientes_controller.rb:27:in `block in create'
+  [1m[36mIngrediente Create (0.9ms)[0m  [1m[32mINSERT INTO "ingredientes" ("nome", "relevancia", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["nome", "molho de tomate "], ["relevancia", "2"], ["created_at", "2021-12-09 06:10:26.035051"], ["updated_at", "2021-12-09 06:10:26.035051"]]
+  ↳ app/controllers/ingredientes_controller.rb:27:in `block in create'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/ingredientes_controller.rb:27:in `block in create'
+Redirected to http://127.0.0.1:3000/ingredientes/24
+Completed 302 Found in 10ms (ActiveRecord: 5.0ms | Allocations: 2739)
+
+
+Started GET "/ingredientes/24" for 127.0.0.1 at 2021-12-09 03:10:26 -0300
+Processing by IngredientesController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mIngrediente Load (0.5ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes" WHERE "ingredientes"."id" = $1 LIMIT $2[0m  [["id", 24], ["LIMIT", 1]]
+  ↳ app/controllers/ingredientes_controller.rb:62:in `set_ingrediente'
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/show.html.erb within layouts/application
+  Rendered ingredientes/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3413)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 0.5ms | Allocations: 4554)
+
+
+Started GET "/ingredientes" for 127.0.0.1 at 2021-12-09 03:10:27 -0300
+Processing by IngredientesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering ingredientes/index.html.erb within layouts/application
+  [1m[36mIngrediente Load (1.6ms)[0m  [1m[34mSELECT "ingredientes".* FROM "ingredientes"[0m
+  ↳ app/views/ingredientes/index.html.erb:16
+  Rendered ingredientes/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1623)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 5029)
+Completed 200 OK in 12ms (Views: 9.6ms | ActiveRecord: 1.6ms | Allocations: 5457)
+
+

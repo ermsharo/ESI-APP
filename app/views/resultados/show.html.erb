@@ -1,0 +1,42 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @resultado.nome %>
+</p>
+
+<p>
+  <strong>Ingredientes:</strong>
+  <%= @resultado.ingredientes %>
+</p>
+
+<p>
+  <strong>Ingredientes tag:</strong>
+  <%= @resultado.ingredientes_tag %>
+</p>
+
+
+
+
+<p>
+  <strong>Como fazer:</strong>
+  <%= @resultado.como_fazer %>
+</p>
+
+<p>
+  <strong>Imagem:</strong>
+  <%= @resultado.imagem %>
+</p>
+
+<p>
+  <strong>Origem:</strong>
+  <%= @resultado.origem %>
+</p>
+
+<p>
+  <strong>Relevancia:</strong>
+  <%= @resultado.relevancia %>
+</p>
+
+<%= link_to 'Edit', edit_resultado_path(@resultado) %> |
+<%= link_to 'Back', resultados_path %>

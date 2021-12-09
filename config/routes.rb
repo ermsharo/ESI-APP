@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
-  resources :receita
+  resources :resultados
+  get 'resultados/index'
+  get 'resultados/show'
+  get 'resultados/new'
+  post 'resultados/new'
+  get 'resultados/edit'
+
+
+
   resources :ingredientes
   get 'ingrediente/index'
   get 'ingrediente/show'
