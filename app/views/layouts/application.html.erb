@@ -21,7 +21,7 @@
         <header class="mdl-layout__header" style="background-color: black">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Title</span>
+             
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
                 <!-- Navigation. We hide it in small screens. -->
@@ -31,12 +31,13 @@
             </div>
         </header>
         <div class="mdl-layout__drawer">
-            <span class="mdl-layout-title">Title</span>
+            <span class="mdl-layout-title"></span>
             <nav class="mdl-navigation">
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
-                <a class="mdl-navigation__link" href="">Link</a>
+                <span class="mdl-navigation__link"><%=   link_to "Cadastrar receita", "/ingredientes/new" %></span>
+ <span class="mdl-navigation__link"><%=   link_to "Cadastrar ingrediente", "/ingredientes" %></span>
+
+
+ 
             </nav>
         </div>
 
@@ -44,10 +45,10 @@
       
 <footer class="mdl-mini-footer">
   <div class="mdl-mini-footer__left-section">
-    <div class="mdl-logo">Title</div>
+    <div class="mdl-logo">ESI - 2021</div>
     <ul class="mdl-mini-footer__link-list">
-      <li><a href="#">Help</a></li>
-      <li><a href="#">Privacy & Terms</a></li>
+      <li><a href="#">github</a></li>
+      <li><a href="mailto:emilio.haro.bot@gmail.com?subject=Erro recipe app" >Reportar bug</a></li>
     </ul>
   </div>
 </footer>
